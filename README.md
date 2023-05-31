@@ -12,11 +12,11 @@
 3. **Every branch**<br/>
 Потребни се 5 тестови.
 #1) user = null да се исполни условот за exception. Се изминуваат само гранките 1-2 и 2-24. <br/>
-2)username = null, email=mk@gmailcom, password=ab mk@gmailcom  <br/>
-Email-от е неправилен односно му недостасува '@' или '.', а password-от има празно место. <br/>
-3)username==mk, email=mk@yahoo.com, password='password!!' <br/>
+2)user=User(username = null,  password="ab mk@gmailcom", email="mk@gmailcom") <br/>
+Email-от е неправилен односно му недостасува '@' или '.', а password-от има празно место и го содржи имејлот. <br/>
+3)user=User(username="mk", password="password!!" email="mk@yahoo.com") <br/>
 Username-от не е null, email-от е правилен, password-от содржи специјален карактер, со цел да се изминат сите гранки од 6 до 14. <br/>
-4)username==mk, email=mk@yahoo.com, password='m k'  <br/>
+4)user=User(username="mk", password="m k", email="mk@yahoo.com")  <br/>
 Пасвордот содржи празно место, со цел да се измине гранката 19-23. <br/>
 5)username==mk, email=mk@yahoo.com, password='mk' <br/>
 Пасвордот не содржи специјален карактер, со цел да се измине уште гранката 21-23. <br/>
