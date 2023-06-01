@@ -1,7 +1,8 @@
 # SI_2023_lab2_216023
 #### Марија Клисаровска 216023
 1. **Control flow graph** <br/>
-![cfg_lab](https://github.com/marijaklisarovska/SI_2023_lab2_216023/assets/128065239/66b90a22-0b94-43e1-bca7-c18cf2833b07)
+![cfg_lab](https://github.com/marijaklisarovska/SI_2023_lab2_216023/assets/128065239/508dea64-4a50-4e91-a64d-1eb29790997e)
+
 
 2. **Цикломатска комплексност = 11** <br/>
 Цикломатската комплексност е пресметана со Ојлеровата формула E-V+2. <br/>
@@ -19,13 +20,13 @@ Username-от не е null, email-от е правилен, password-от сод
 4)user=User(username="mk", password="m k", email="mk@yahoo.com")  <br/>
 Пасвордот содржи празно место, со цел да се измине гранката 19-23. <br/>
 5)username==mk, email=mk@yahoo.com, password='mk' <br/>
-Пасвордот не содржи специјален карактер, со цел да се измине уште гранката 21-23. <br/>
+Пасвордот не содржи специјален карактер. <br/>
 
 4. **Multiple conditions** <br/>
 
-TXX | user=User(null, " ", " ")
+TXX | user=null
 --- | ---
-FTX | user!=null, user.getPassword()==null, user=User(user, , " ")
+FTX | user!=null, user.getPassword()==null, X
 FFT | user!=null, user.getPassword()!=null, user.getEmail()==null
 FFF | user!=null, user.getPassword()!=null, user.getEmail()!=null
 <br/>
